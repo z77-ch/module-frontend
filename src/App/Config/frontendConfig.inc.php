@@ -1,5 +1,5 @@
 <?php
-namespace Z77\Module\Frontend;
+namespace Z77\Module\Frontend\App;
 
 use Z77\Core\Config\AuthRole;
 

@@ -6,7 +6,7 @@ use Z77\Core\Controller\AbstractSecurityController
 
 class IndexController extends AbstractSecurityController
 {
-    protected function preAction() {}
+    protected function preExcecute() {}
 
     protected function indexAction()
     {
