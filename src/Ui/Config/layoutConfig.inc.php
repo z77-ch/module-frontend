@@ -22,7 +22,6 @@ return [
             'seo'             => 'partials/head/seo',
             'favicon'         => 'partials/head/favicon',
             'fonts'           => 'partials/head/fonts',
-            'scripts'         => 'partials/head/scripts',
             'social'          => 'partials/head/social',
             'structured-data' => 'partials/head/structured-data',
         ],
