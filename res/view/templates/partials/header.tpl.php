@@ -23,7 +23,7 @@ $navEntries = $navigationService->getBySlot('frontend-main');
                 <a href="<?= e($lang['url']) ?>"
                    class="fe-topbar__link fe-topbar__link--lang<?= $lang['active'] ? ' fe-topbar__link--active' : '' ?>"
                    <?= $lang['active'] ? 'aria-current="true"' : '' ?>>
-                    <?= e(strtoupper($lang['code'])) ?>
+                    <?= e(t('lang.' . $lang['code'], [], $lang['code'])) ?>
                 </a>
             <?php endforeach; ?>
         </nav>
@@ -52,7 +52,7 @@ $navEntries = $navigationService->getBySlot('frontend-main');
         <li>
             <a href="<?= e($lang['url']) ?>"
                class="fe-nav-overlay__link fe-nav-overlay__link--lang<?= $lang['active'] ? ' fe-nav-overlay__link--active' : '' ?>">
-                <?= e(strtoupper($lang['code'])) ?>
+                <?= e(t('lang.' . $lang['code'], [], $lang['code'])) ?>
             </a>
         </li>
         <?php endforeach; ?>

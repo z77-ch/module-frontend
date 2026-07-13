@@ -15,8 +15,13 @@
 
 .fe-nav-toggle:checked ~ .fe-nav-overlay { display: flex; }
 
-/* Lock body scroll while the overlay is open — :has() bridges the html boundary. */
-html:has(.fe-nav-toggle:checked) { overflow: hidden; }
+/* Lock page scroll while the overlay is open — :has() bridges the html boundary.
+   padding-right replaces the removed scrollbar's width (core.js publishes
+   --z77-scrollbar-width) so the page does not shift when the scrollbar disappears. */
+html:has(.fe-nav-toggle:checked) {
+    overflow: hidden;
+    padding-right: var(--z77-scrollbar-width, 0px);
+}
 
 .fe-nav-overlay__list {
     display:    flex;
